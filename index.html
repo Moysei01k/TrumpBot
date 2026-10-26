@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrumpBot · Grok White House</title>
+<meta name="description" content="One president. Twelve agents. Four rooms. One continuous camera. Original fictional parody.">
+<style>
+  html, body { margin: 0; height: 100%; background: #0a1628; }
+  body { display: grid; place-items: center; overflow: hidden; font: 12px/1.4 Menlo, Consolas, monospace; color: #8fb3cf; }
+  canvas { width: min(100vw, calc(100vh - 28px)); height: min(100vw, calc(100vh - 28px)); display: block; cursor: pointer; }
+  #hint { position: fixed; left: 50%; bottom: 6px; transform: translateX(-50%); opacity: .55; white-space: nowrap; pointer-events: none; }
+  body.render #hint { display: none; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1080" aria-label="Animated Grok White House dashboard"></canvas>
+<div id="hint">space pause · ← → seek · 1–4 jump to room · click a room tab</div>
+<script src="web/timeline.js"></script>
+<script src="web/scene.js"></script>
+</body>
+</html>
